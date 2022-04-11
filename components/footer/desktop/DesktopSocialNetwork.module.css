@@ -1,0 +1,13 @@
+.image {
+  width: 7%;
+
+  transition: transform 1s ease;
+  margin: 0 1.5%;
+  min-width: 60px;
+  height: auto;
+}
+
+.image:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+}

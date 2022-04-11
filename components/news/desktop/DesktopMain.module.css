@@ -1,0 +1,16 @@
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+}
+
+.desktopContainer {
+  position: relative;
+}
+
+@media all and (max-width: 750px) {
+  .desktopContainer {
+    display: none;
+  }
+}

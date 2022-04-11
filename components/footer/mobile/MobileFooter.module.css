@@ -1,0 +1,13 @@
+.mobileContainer {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  /* /* padding-top: 7.5%; */
+  padding-bottom: 7.5%; 
+}
+
+@media all and (min-width: 750px) {
+  .mobileContainer {
+    display: none;
+  }
+}

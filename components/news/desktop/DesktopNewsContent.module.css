@@ -1,0 +1,30 @@
+.container {
+  color: white;
+  position: absolute;
+  top: 32.5%;
+  left: 12.125%;
+  padding-left: auto;
+
+}
+
+.title {
+  font-size: 6.5vmax;
+  letter-spacing: 0.5rem;
+  /* width: 90%; */
+}
+
+.smallText {
+  font-size: 1.25vmax;
+  text-align: left;
+  width: 55%;
+  
+ 
+  line-height: 2rem;
+
+}
+
+.readmore {
+  padding-top: 1%;
+  font-size: 0.75vmax;
+  cursor: pointer;
+}

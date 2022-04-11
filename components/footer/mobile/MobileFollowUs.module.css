@@ -1,0 +1,17 @@
+.followUsContainer {
+    padding-top: 7.5%;
+  }
+
+
+  .followUsTitle {
+    font-size: 2rem;
+    font-weight: 900;
+    color: green;
+    letter-spacing: 0.3rem;
+  }
+
+  .socialNetworkContainer {
+     display: flex;
+     width: 80%;
+     margin: auto;
+  }

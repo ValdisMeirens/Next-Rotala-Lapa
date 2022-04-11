@@ -1,0 +1,28 @@
+.desktopContainer {
+}
+
+.navLinksContainer {
+  font-size: 1.25rem;
+  list-style-type: none;
+  text-transform: uppercase;
+  right: 0%;
+  top:0%;
+  position: absolute;
+  z-index: 3;
+  padding: 8% 12%;
+
+}
+
+.navLinksContainer li {
+  padding: 3% 0;
+  text-align: center;
+  color: green;
+  text-align: right;
+
+}
+
+@media all and (max-width: 750px) {
+  .desktopContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  padding: 2% 11%;
+}
+
+.logocontainer {
+  width: 15%;
+}
+.navcontainer {
+  width: 7%;
+}
+
+.logo {
+  width: 100%;
+}
+.nav {
+  width: 100%;
+}

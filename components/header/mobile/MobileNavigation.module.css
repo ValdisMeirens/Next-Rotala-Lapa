@@ -1,0 +1,26 @@
+.navLinksContainer {
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+  background-color: green;
+  transition: width 2s;
+
+}
+
+.navLinksContainer li {
+  padding: 2% 0;
+}
+
+.container li {
+  cursor: pointer;
+}
+
+.container li:hover {
+  color: rgb(66, 61, 61);
+}
+
+@media all and (min-width: 750px) {
+  .mobileContainer {
+    display: none;
+  }
+}
