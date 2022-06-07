@@ -22,7 +22,7 @@ const DesktopMain = (props) => {
         setPicture(props.news[counter].image);
 
         setNewsId(props.news[counter].ID);
-      }, 10000);
+      }, 3000);
       return () => clearInterval(changeNews);
     }, []);
 

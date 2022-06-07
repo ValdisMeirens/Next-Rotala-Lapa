@@ -6,7 +6,7 @@ import Main from "../components/news/Main";
 
 export default function Home(props) {
   const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";
-
+  console.log(props);
   return (
     <Fragment>
       <Head>
