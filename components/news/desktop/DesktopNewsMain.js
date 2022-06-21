@@ -1,7 +1,6 @@
-import classes from "./DesktopNewMain.module.css";
+import classes from "./DesktopNewsMain.module.css";
 
-const DesktopNewMain = (props) => {
-  console.log(props);
+const DesktopNewsMain = (props) => {
   return (
     <div className={classes.desktopContainer}>
       <img
@@ -17,4 +16,4 @@ const DesktopNewMain = (props) => {
   );
 };
 
-export default DesktopNewMain;
+export default DesktopNewsMain;
