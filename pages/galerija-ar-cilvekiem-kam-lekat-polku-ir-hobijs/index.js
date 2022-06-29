@@ -1,10 +1,12 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import DesktopMainGallery from "../../components/gallery/desktop/DesktopMainGallery";
+import Header from "../../components/header/Header";
 
 
 export default function GalleryMain(props) {
   const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";
-  console.log(props);
+  // console.log(props);
   return (
     <Fragment>
       <Head>
@@ -16,7 +18,8 @@ export default function GalleryMain(props) {
       </Head>
 
       <main>
-        <div>TEST</div>
+        <Header />
+        <DesktopMainGallery gallery={props}/>
       </main>
     </Fragment>
   );
