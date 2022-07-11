@@ -1,9 +1,7 @@
-import { Fragment } from "react";
-import classes from "./DesktopMainGallery.module.css";
+import classes from "./MobileMainGallery.module.css";
 import Link from "next/link";
-import Info from "../../header/common/Info";
 
-const DesktopMainGallery = (props) => {
+const MobileMainGallery = (props) => {
   const galleryItems = props.gallery.data.map(({ ID, NAME, IMAGE_NAME }) => {
     return (
       <Link
@@ -24,15 +22,23 @@ const DesktopMainGallery = (props) => {
 
   return (
     <div className={classes.galleryContainer}>
-      <Info
-        backgroundImage="/gallery_header/galerijas_titulbilde.png"
-        backgroundImageText="Galerija"
-        image="/header/GALERIJA.png"
-        imageText="Galerija teksts"
-      />
+      <div className={classes.mainImageContainer}>
+        <img
+          src={`/gallery_header/galerijas_titulbilde.png`}
+          alt="GALERIJA"
+          className={classes.mainImage}
+        />
+        <div className={classes.mainImageTextContainer}>
+          <img
+            src={`/header/GALERIJA.png`}
+            alt="GALERIJA TEKSTS"
+            className={classes.galleryTextImage}
+          />
+        </div>
+      </div>
       {galleryItems}
     </div>
   );
 };
 
-export default DesktopMainGallery;
+export default MobileMainGallery;

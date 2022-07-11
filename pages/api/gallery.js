@@ -9,7 +9,7 @@ const handler = async (req, res) => {
   });
 
   connection.execute(
-    "SELECT * FROM `gallery` where active = 1",
+    "SELECT * FROM `gallery`",
     [],
     function (err, results, fields) {
       if (err) throw err;
