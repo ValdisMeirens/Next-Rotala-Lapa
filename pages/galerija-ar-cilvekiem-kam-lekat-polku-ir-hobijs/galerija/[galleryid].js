@@ -45,7 +45,7 @@ export async function getStaticProps(context) {
 
 export async function getStaticPaths() {
   const res = await fetch(`${process.env.host}/api/gallery`);
-  console.log(res);
+  // console.log(res);
   const galleryIds = await res.json();
 
   const paths = galleryIds.map((gallery) => ({

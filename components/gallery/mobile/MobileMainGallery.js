@@ -1,5 +1,6 @@
 import classes from "./MobileMainGallery.module.css";
 import Link from "next/link";
+import InfoMobile from "../../header/common/InfoMobile";
 
 const MobileMainGallery = (props) => {
   const galleryItems = props.gallery.data.map(({ ID, NAME, IMAGE_NAME }) => {
@@ -8,13 +9,13 @@ const MobileMainGallery = (props) => {
         key={ID}
         href={`/galerija-ar-cilvekiem-kam-lekat-polku-ir-hobijs/galerija/${ID}`}
       >
-        <div className={classes.galleryImageContainer}>
+        <div className={classes.container}>
           <img
             src={`/gallery_header/${IMAGE_NAME}`}
             alt={NAME}
-            className={classes.galleryImage}
+            className={classes.image}
           />
-          <div className={classes.imageTitle}>{NAME}</div>
+          <div className={classes.title}>{NAME}</div>
         </div>
       </Link>
     );
@@ -22,20 +23,12 @@ const MobileMainGallery = (props) => {
 
   return (
     <div className={classes.galleryContainer}>
-      <div className={classes.mainImageContainer}>
-        <img
-          src={`/gallery_header/galerijas_titulbilde.png`}
-          alt="GALERIJA"
-          className={classes.mainImage}
-        />
-        <div className={classes.mainImageTextContainer}>
-          <img
-            src={`/header/GALERIJA.png`}
-            alt="GALERIJA TEKSTS"
-            className={classes.galleryTextImage}
-          />
-        </div>
-      </div>
+      <InfoMobile
+        backgroundImage={`/gallery_header/galerijas_titulbilde.png`}
+        backgroundImageText="Galerija"
+        image="/header/GALERIJA.png"
+        imageText="Galerija Teksts"
+      />
       {galleryItems}
     </div>
   );

@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageTextContainer {
+  position: absolute;
+  z-index: 1;
+  width: 70%;
+  margin: auto;
+}
+
+.backgroundImage,
+.imageText {
+  width: 100%;
+}

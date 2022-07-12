@@ -5,7 +5,6 @@ import DesktopMainGallery from "../../components/gallery/desktop/DesktopMainGall
 import MobileMainGallery from "../../components/gallery/mobile/MobileMainGallery";
 import Header from "../../components/header/Header";
 
-
 export default function GalleryMain(props) {
   const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";
   return (
@@ -20,9 +19,9 @@ export default function GalleryMain(props) {
 
       <main>
         <Header />
-        <MobileMainGallery gallery={props}/>
+        <MobileMainGallery gallery={props} />
 
-        <DesktopMainGallery gallery={props}/>
+        <DesktopMainGallery gallery={props} />
         <Footer />
       </main>
     </Fragment>

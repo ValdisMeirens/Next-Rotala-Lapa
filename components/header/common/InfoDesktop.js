@@ -1,6 +1,6 @@
-import classes from "./Info.module.css";
+import classes from "./InfoDesktop.module.css";
 
-const Info = (props) => {
+const InfoDesktop = (props) => {
   return (
     <div className={classes.container}>
       <img
@@ -19,4 +19,4 @@ const Info = (props) => {
   );
 };
 
-export default Info;
+export default InfoDesktop;

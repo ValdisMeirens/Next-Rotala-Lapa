@@ -1,32 +1,12 @@
 .aboutUsContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
   overflow: hidden;
 }
 
-.mainImageContainer {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.mainImageTextContainer {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.mainImage {
-  width: 100%;
-}
-
-.aboutUsTextImage {
-  z-index: 1;
-  width: 70%;
+.line {
+  width: 80%;
+  border-bottom: 1px solid black;
   margin: auto;
 }
 
