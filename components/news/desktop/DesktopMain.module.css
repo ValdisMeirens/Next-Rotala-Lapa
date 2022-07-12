@@ -1,13 +1,15 @@
+.desktopContainer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
 .image {
   object-fit: cover;
   width: 100%;
-  height: auto;
   aspect-ratio: 3/2;
 }
 
-.desktopContainer {
-  position: relative;
-}
 
 @media all and (max-width: 750px) {
   .desktopContainer {

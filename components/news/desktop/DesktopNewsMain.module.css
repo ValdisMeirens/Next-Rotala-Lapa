@@ -13,19 +13,21 @@
 }
 
 .title {
-    padding-bottom: 3%;
-    letter-spacing: 0.1rem;
-
+  padding-bottom: 1%;
+  text-align: center;
+  color: green;
+  letter-spacing: 1rem;
+  width: 100%;
+  margin: auto;
+  font-size: 4vmax;
 }
 
 .text {
-text-align:center;
-letter-spacing: 0.2rem;
-font-size: 1.125rem;
+  text-align: justify;
+  letter-spacing: 0.2rem;
+  font-size: 1.125rem;
 
-line-height: 2rem;
-
-
+  line-height: 2rem;
 }
 /* .text {
   padding-top: 2.5%;
@@ -35,7 +37,6 @@ line-height: 2rem;
   line-height: 2rem;
 
 } */
-
 
 .desktopContainer {
   position: relative;

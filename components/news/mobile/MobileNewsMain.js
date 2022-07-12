@@ -10,7 +10,7 @@ const MobilenNewsMain = (props) => {
       />
       <div className={classes.container}>
         <h1 className={classes.title}>{props.news.title}</h1>
-        <p className={classes.text}>{props.news.text}</p>
+        <p className={classes.text}>{props.news.info}</p>
       </div>
     </div>
   );
