@@ -1,10 +1,11 @@
 import { Fragment } from "react";
 import DesktopGalleryHeader from "./desktop/DesktopGalleryHeader";
-import classes from "./HeaderGallery.module.css";
+import MobileNavigation from "./mobile/MobileNavigation";
 
 const HeaderGallery = () => {
   return (
     <Fragment>
+      <MobileNavigation />
       <DesktopGalleryHeader />
     </Fragment>
   );

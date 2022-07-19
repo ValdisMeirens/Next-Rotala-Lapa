@@ -21,7 +21,7 @@ export default function GalleryIdPage(props) {
 
       <HeaderGallery />
       <DesktopGallery items={props.gallery} />
-      {/* <Footer /> */}
+      <Footer />
     </Fragment>
   );
 }
