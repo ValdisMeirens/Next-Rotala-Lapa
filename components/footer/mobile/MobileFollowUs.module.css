@@ -1,5 +1,6 @@
 .followUsContainer {
     padding-top: 7.5%;
+
   }
 
 
@@ -7,7 +8,10 @@
     font-size: 2rem;
     font-weight: 900;
     color: green;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.5rem;
+    padding-bottom: 2.5%;
+
+
   }
 
   .socialNetworkContainer {

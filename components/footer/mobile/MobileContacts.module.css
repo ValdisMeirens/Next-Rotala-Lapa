@@ -1,6 +1,5 @@
 .contactsContainer {
   text-align: center;
-  /* border-top: 1px solid black; */
   border-bottom: 1px solid black;
   padding-top: 7.5%;
   padding-bottom: 7.5%;
@@ -11,9 +10,7 @@
   font-weight: 900;
   color: green;
   padding-bottom: 2.5%;
-  letter-spacing: 0.3rem;
-  padding-top: 2.5%;
-
+  letter-spacing: 0.5rem;
   
 }
 
