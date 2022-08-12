@@ -2,12 +2,15 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  /* height: 80vh; */
 }
 
 .image {
-  object-fit: cover;
+  object-fit: cover; 
   width: 100%;
-  aspect-ratio: 3/2;
+  height: auto;
+  /* height: 100vh; */
+   aspect-ratio: 3/2;
 }
 
 

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import classes from "./DesktopMain.module.css";
 import DesktopNewsContent from "./DesktopNewsContent.js";
+import Image from "next/image";
 
 const DesktopMain = (props) => {
   const pictureText = "TDA Rotaļa Jaunumi";
@@ -14,6 +15,7 @@ const DesktopMain = (props) => {
   const [text, setText] = useState(props.news[0].text);
 
   useEffect(() => {
+    console.log("test");
     const changeNews = setInterval(() => {
       counter = counter === arrayLenght ? 0 : counter + 1;
 
@@ -29,11 +31,20 @@ const DesktopMain = (props) => {
 
   return (
     <div className={classes.desktopContainer}>
-      <img
+      {/* <img
         src={`/news/${picture}`}
         alt={pictureText}
         className={classes.image}
-      />
+      /> */}
+      <div className={classes.image}>
+        <Image
+          src={`/news/${picture}`}
+          objectFit="cover"
+          className={classes.image}
+          layout="fill"
+        />
+      </div>
+
       <DesktopNewsContent
         title={title}
         smallText={smallText}
