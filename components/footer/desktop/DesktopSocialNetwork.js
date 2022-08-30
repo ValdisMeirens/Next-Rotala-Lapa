@@ -4,7 +4,7 @@ import classes from "./DesktopSocialNetwork.module.css";
 const DesktopSocialNetwork = (props) => {
   return (
     <div className={classes.image}>
-      <a href={props.url} target="_blank">
+      <a href={props.url} target="_blank" rel="noreferrer">
         <Image
           src={props.src}
           alt={props.alt}

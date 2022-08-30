@@ -5,7 +5,7 @@ const DesktopGallery = (props) => {
   const items = props.items.map(
     ({ ID, IMAGE_PATH, YEAR, FOLDER_NAME, PARENT_ID }) => {
       return (
-        <div className={classes.imageContainer}>
+        <div className={classes.imageContainer} key={ID}>
           {/* <img
             src={`${FOLDER_NAME}/${IMAGE_PATH}`}
             alt={YEAR}
