@@ -28,7 +28,7 @@ export default function GalleryMain(props) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(`${process.env.host}/api/gallery_headers`);
   const data = await res.json();
 

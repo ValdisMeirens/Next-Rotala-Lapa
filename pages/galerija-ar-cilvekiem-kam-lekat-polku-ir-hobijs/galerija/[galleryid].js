@@ -26,7 +26,7 @@ export default function GalleryIdPage(props) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
   const { params } = context;
   const res = await fetch(`${process.env.host}/api/gallery`);
   const data = await res.json();
@@ -43,13 +43,13 @@ export async function getStaticProps(context) {
   };
 }
 
-export async function getStaticPaths() {
-  const res = await fetch(`${process.env.host}/api/gallery`);
-  const galleryIds = await res.json();
+// export async function getStaticPaths() {
+//   const res = await fetch(`${process.env.host}/api/gallery`);
+//   const galleryIds = await res.json();
 
-  const paths = galleryIds.map((gallery) => ({
-    params: { galleryid: gallery.PARENT_ID.toString() },
-  }));
+//   const paths = galleryIds.map((gallery) => ({
+//     params: { galleryid: gallery.PARENT_ID.toString() },
+//   }));
 
-  return { paths, fallback: false };
-}
+//   return { paths, fallback: false };
+// }

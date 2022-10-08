@@ -6,6 +6,7 @@ import Main from "../components/news/Main";
 
 export default function Home(props) {
   const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";
+
   return (
     <Fragment>
       <Head>
@@ -18,14 +19,15 @@ export default function Home(props) {
 
       <main>
         <Header />
-        <Main news={props.data} />
+        <Main news={props} />
+
         <Footer />
       </main>
     </Fragment>
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const res = await fetch(`${process.env.host}/api/news`);
   const data = await res.json();
 
