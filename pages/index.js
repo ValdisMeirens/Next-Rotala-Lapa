@@ -3,6 +3,7 @@ import { Fragment } from "react";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
 import Main from "../components/news/Main";
+import {server} from "../components/config/index"
 
 export default function Home(props) {
   const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";
@@ -28,7 +29,9 @@ export default function Home(props) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`${process.env.host}/api/news`);
+  // const res = await fetch(`${process.env.host}/api/news`);
+  const res = await fetch(`${server}/api/news`);
+  console.log(res);
   const data = await res.json();
 
   return {

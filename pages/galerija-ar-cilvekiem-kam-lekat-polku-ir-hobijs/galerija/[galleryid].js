@@ -1,10 +1,10 @@
 import { Fragment } from "react";
 
 import Head from "next/head";
-import Header from "../../../components/header/Header";
 import Footer from "../../../components/footer/Footer";
 import DesktopGallery from "../../../components/gallery/desktop/DesktopGallery";
 import HeaderGallery from "../../../components/header/HeaderGallery";
+import {server} from "../../../components/config/index"
 
 export default function GalleryIdPage(props) {
   const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";
@@ -28,7 +28,7 @@ export default function GalleryIdPage(props) {
 
 export async function getServerSideProps(context) {
   const { params } = context;
-  const res = await fetch(`${process.env.host}/api/gallery`);
+  const res = await fetch(`${server}/api/gallery`);
   const data = await res.json();
 
   const gallery = data.filter(
@@ -42,14 +42,3 @@ export async function getServerSideProps(context) {
     },
   };
 }
-
-// export async function getStaticPaths() {
-//   const res = await fetch(`${process.env.host}/api/gallery`);
-//   const galleryIds = await res.json();
-
-//   const paths = galleryIds.map((gallery) => ({
-//     params: { galleryid: gallery.PARENT_ID.toString() },
-//   }));
-
-//   return { paths, fallback: false };
-// }

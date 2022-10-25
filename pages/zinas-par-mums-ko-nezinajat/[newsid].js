@@ -3,6 +3,7 @@ import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import Head from "next/head";
 import NewsMain from "../../components/news/NewsMain";
+import { server } from "../../components/config/index";
 
 export default function NewsIdPage(props) {
   const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";
@@ -28,11 +29,9 @@ export default function NewsIdPage(props) {
 
 export async function getServerSideProps(context) {
   const { params } = context;
-
-  const res = await fetch(`${process.env.host}/api/news`);
+  const res = await fetch(`${server}/api/news`);
   const data = await res.json();
-
-  const news = data.find(
+  const news = data.news.find(
     (news) => news.ID.toString() === params.newsid.toString()
   );
 
