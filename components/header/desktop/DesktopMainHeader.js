@@ -1,17 +1,18 @@
 import classes from "./DesktopMainHeader.module.css";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import rotala_logo from "../../../public/footer/rotala_logo.png";
+import rimbulis from "../../../public/footer/rimbulis.png"
+
+// import { motion } from "framer-motion";
 
 
 const DesktopMainHeader = (props) => {
   return (
     <div className={classes.container}>
       <div className={classes.logocontainer}>
-        <div className={classes.logo}>
-          <Image src="/footer/rotala_logo.png" width={2108} height={1082} />
-        </div>
+        <Image src={rotala_logo} className={classes.logo} alt="TDA Rotala"/>
       </div>
-      <motion.div className={classes.navcontainer}   whileHover={{ rotate:'1111deg' }} 
+      {/* <motion.div className={classes.navcontainer}   whileHover={{ rotate:'1111deg' }} 
           transition={{ duration: 2 }}
       >
         <div className={classes.nav}>
@@ -22,7 +23,15 @@ const DesktopMainHeader = (props) => {
             onMouseEnter={props.onMouseEnter}
           />
         </div>
-      </motion.div>
+      </motion.div> */}
+      <div className={classes.navcontainer}>
+        <Image
+          src={rimbulis}
+          className={classes.nav}
+          alt="Rimbulis"
+          onMouseEnter={props.onMouseEnter}
+        />
+      </div>
     </div>
   );
 };

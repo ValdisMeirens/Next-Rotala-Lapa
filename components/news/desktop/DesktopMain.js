@@ -15,7 +15,6 @@ const DesktopMain = (props) => {
   const [text, setText] = useState(props.news.data.news[0].text);
 
   useEffect(() => {
-    console.log("test");
     const changeNews = setInterval(() => {
       counter = counter === arrayLenght ? 0 : counter + 1;
 
@@ -31,12 +30,13 @@ const DesktopMain = (props) => {
 
   return (
     <div className={classes.desktopContainer}>
-      <div className={classes.image}>
+      <div className={classes.container}>
         <Image
           src={`/news/${picture}`}
-          objectFit="cover"
+          alt="TDA Rotaļa jaunumi"
           className={classes.image}
-          layout="fill"
+          width={6000}
+          height={4000}
         />
       </div>
 

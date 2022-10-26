@@ -14,8 +14,11 @@ const DesktopGallery = (props) => {
           <div className={classes.image}>
             <Image
               src={`${FOLDER_NAME}/${IMAGE_PATH}`}
-              layout="fill"
-              objectFit="cover"
+              // layout="contain"
+              // objectFit="contain"
+              width={1900}
+              height={1900}
+              className={classes.image}
             />
           </div>
         </div>

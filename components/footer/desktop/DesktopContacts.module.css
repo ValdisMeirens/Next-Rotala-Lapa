@@ -1,5 +1,7 @@
 .container {
-    padding-top: 3%;
+    padding-top: 2%;
+    /* padding-bottom: 2%; */
+
     text-align: center;
     align-items: center;
     width: 40%;
@@ -7,6 +9,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+
   }
   
   .contactheading {
@@ -17,18 +20,18 @@
   .contactparagraph {
     font-size: 1.25rem;
     font-weight: 200;
-    padding-top: 2%;
+    padding-top: 3%;
   }
   
   .socialnetworkcontainer {
     display: flex;
-    width: 100%;
+    width: 75%;
     margin: auto;
-    align-items: center;
+    align-items:center;
     justify-content: center;
+    justify-items: center;
     padding-top: 4%;
-    padding-bottom: 3%;
+    padding-bottom: 4%;
 
-    /* border: 1px solid red; */
   }
   

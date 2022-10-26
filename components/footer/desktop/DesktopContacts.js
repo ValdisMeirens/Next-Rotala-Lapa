@@ -1,5 +1,8 @@
 import DesktopSocialNetwork from "./DesktopSocialNetwork";
 import classes from "./DesktopContacts.module.css";
+import insta from "../../../public/socialnetwork/insta.png";
+import facebook from "../../../public/socialnetwork/facebook.png";
+import youtube from "../../../public/socialnetwork/youtube.png";
 
 const DesktopContacts = () => {
   return (
@@ -11,24 +14,18 @@ const DesktopContacts = () => {
       </p>
       <div className={classes.socialnetworkcontainer}>
         <DesktopSocialNetwork
-          src="/socialnetwork/insta.png"
+          src={insta}
           alt="INSTAGRAM"
-          width={350}
-          height={350}
           url="https://instagram.com/tdarotala"
         />
         <DesktopSocialNetwork
-          src="/socialnetwork/facebook.png"
+          src={facebook}
           alt="FACEBOOK"
-          width={350}
-          height={350}
           url="https://www.facebook.com/TdaRotala"
         />
         <DesktopSocialNetwork
-          src="/socialnetwork/youtube.png"
+          src={youtube}
           alt="YOUTUBE"
-          width={350}
-          height={350}
           url="https://www.youtube.com/user/tdaRotala"
         />
       </div>

@@ -9,15 +9,20 @@
 }
 
 .logocontainer {
-  width: 15%;
-}
-.navcontainer {
-  width: 7%;
+  width: 12%;
+  height: auto;
 }
 
 .logo {
   width: 100%;
+  height: auto;
 }
+
+.navcontainer {
+  width: 7%;
+}
+
 .nav {
   width: 100%;
+  height: auto;
 }
