@@ -56,8 +56,8 @@ const MobileMain = (props) => {
           {title}
         </motion.div>
         <p className={classes.smallText}>{smallText}</p>
-        <Link href={`/zinas-par-mums-ko-nezinajat/${newsid}`}>
-          <div className={classes.readMore}>LASĪT VAIRĀK</div>
+        <Link href={`/zinas-par-mums-ko-nezinajat/${newsid}`} className={classes.readMore}>
+          LASĪT VAIRĀK
         </Link>
       </div>
     </div>

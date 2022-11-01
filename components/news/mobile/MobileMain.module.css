@@ -13,7 +13,7 @@
   text-align: center;
   width: 80%;
   margin: auto;
-  padding-top: 7.5%;
+  padding-top: 5%;
   padding-bottom: 2.5%;
   transition: all 3s ease;
   border-bottom: 1px solid black;
@@ -40,24 +40,25 @@
 
   white-space: wrap;
   overflow: hidden;
-  text-overflow: ellipsis;
-  min-height: 200px;
+  /* text-overflow: ellipsis; */
+  min-height: 25vh;
   line-height: 2rem;
   max-height: 200px;
 }
 
 .readMore {
   align-self: flex-end;
-  padding: 2%;
+  padding: 3%;
   background-color: green;
   font-size: 0.5rem;
-  border: 1px solid green;
+  border-radius: 5%;
+  /* border: 1px solid green; */
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .readMore:hover {

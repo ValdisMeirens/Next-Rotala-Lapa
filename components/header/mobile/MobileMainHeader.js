@@ -1,15 +1,16 @@
 import classes from "./MobileMainHeader.module.css";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import rotala_logo from "../../../public/footer/rotala_logo.png";
+import rimbulis from "../../../public/footer/rimbulis.png";
 
 const MobileMainHeader = (props) => {
   return (
     <div className={classes.container}>
-      <div className={classes.logo}>
-        <Image src="/footer/rotala_logo.png" width={2108} height={1082} />
+      <div className={classes.logocontainer}>
+        <Image src={rotala_logo} alt="TDA Rotala" className={classes.logo}/>
       </div>
-      <div className={classes.nav} onClick={props.onClick}>
-        <Image src="/footer/rimbulis.png" width={1330} height={1082} />
+      <div className={classes.navcontainer} onClick={props.onClick}>
+        <Image src={rimbulis} alt="Rimbulis"  className={classes.nav}/>
       </div>
     </div>
   );

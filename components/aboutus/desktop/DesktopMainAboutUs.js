@@ -1,14 +1,16 @@
 import InfoDesktop from "../../header/common/InfoDesktop";
 import DesktopAboutUsInfo from "./DesktopAboutUsInfo";
 import classes from "./DesktopMainAboutUs.module.css";
+import aboutUs from "../../../public/aboutus/par_mums_titulbilde.png";
+import iamgeAboutUs from "../../../public/header/par-mums.png";
 
 const DesktopMainAboutUs = (props) => {
   return (
     <div className={classes.aboutUsContainer}>
       <InfoDesktop
-        backgroundImage="/aboutus/par_mums_titulbilde.png"
+        backgroundImage={aboutUs}
         backgroundImageText="Par Mums"
-        image="/header/par-mums.png"
+        image={iamgeAboutUs}
         imageText="Par Mums teksts"
       />
       <DesktopAboutUsInfo

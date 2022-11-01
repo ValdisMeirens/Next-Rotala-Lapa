@@ -1,5 +1,8 @@
 import classes from "./MobileFollowUs.module.css";
 import MobileSocialNetwork from "./MobileSocialNetwork";
+import insta from "../../../public/socialnetwork/insta.png";
+import facebook from "../../../public/socialnetwork/facebook.png";
+import youtube from "../../../public/socialnetwork/youtube.png";
 
 const MobileFollowUs = () => {
   return (
@@ -7,26 +10,20 @@ const MobileFollowUs = () => {
       <div className={classes.followUsTitle}>SEKO MUMS</div>
       <div className={classes.socialNetworkContainer}>
         <MobileSocialNetwork
-          src="/socialnetwork/insta.png"
+          src={insta}
           alt="INSTAGRAM"
-          width={351}
-          height={360}
           url="https://instagram.com/tdarotala"
           text="Redzēsi bildes"
         />
         <MobileSocialNetwork
-          src="/socialnetwork/facebook.png"
+          src={facebook}
           alt="FACEBOOK"
-          width={351}
-          height={360}
           url="https://www.facebook.com/TdaRotala"
           text="Uzzināsi jaunumus"
         />
         <MobileSocialNetwork
-          src="/socialnetwork/youtube.png"
+          src={youtube}
           alt="YOUTUBE"
-          width={351}
-          height={360}
           url="https://www.youtube.com/user/tdaRotala"
           text="Izbaudīsi dejas"
         />

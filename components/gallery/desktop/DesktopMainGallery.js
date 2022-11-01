@@ -2,6 +2,8 @@ import classes from "./DesktopMainGallery.module.css";
 import Link from "next/link";
 import InfoDesktop from "../../header/common/InfoDesktop";
 import Image from "next/image";
+import galleryTitlePicture from "../../../public/gallery_header/galerijas_titulbilde.png";
+import imageAboutUs from "../../../public/header/GALERIJA.png";
 
 const DesktopMainGallery = (props) => {
   const galleryItems = props.gallery.data.map(({ ID, NAME, IMAGE_NAME }) => {
@@ -27,9 +29,9 @@ const DesktopMainGallery = (props) => {
   return (
     <div className={classes.galleryContainer}>
       <InfoDesktop
-        backgroundImage="/gallery_header/galerijas_titulbilde.png"
+        backgroundImage={galleryTitlePicture}
         backgroundImageText="Galerija"
-        image="/header/GALERIJA.png"
+        image={imageAboutUs}
         imageText="Galerija teksts"
       />
       {galleryItems}

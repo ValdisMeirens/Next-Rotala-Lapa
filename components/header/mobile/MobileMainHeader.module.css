@@ -7,10 +7,22 @@
   background-color: rgb(31, 31, 31);
 }
 
-.logo {
+.logocontainer {
   width: 20%;
-}
-.nav {
-  width: 10%;
+  height: auto;
 }
 
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.navcontainer {
+  width: 10%;
+  height: auto;
+}
+
+.nav {
+  width: 100%;
+  height: auto;
+}
