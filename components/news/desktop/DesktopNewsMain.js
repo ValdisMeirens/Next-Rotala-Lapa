@@ -1,12 +1,15 @@
 import classes from "./DesktopNewsMain.module.css";
+import Image from "next/image";
 
-const DesktopNewsMain1 = (props) => {
+const DesktopNewsMain = (props) => {
   return (
     <div className={classes.desktopContainer}>
-      <img
+      <Image
         src={`/news/${props.news.image}`}
         alt={props.news.title}
         className={classes.image}
+        width={6000}
+        height={6000}
       />
       <div className={classes.container}>
         <h1 className={classes.title}>{props.news.title}</h1>
@@ -16,4 +19,4 @@ const DesktopNewsMain1 = (props) => {
   );
 };
 
-export default DesktopNewsMain1;
+export default DesktopNewsMain;

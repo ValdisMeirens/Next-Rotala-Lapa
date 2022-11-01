@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import classes from "./MobileMain.module.css";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const MobileMain = (props) => {
   const pictureText = "TDA Rotaļa Jaunumi";
@@ -40,10 +41,12 @@ const MobileMain = (props) => {
 
   return (
     <div className={classes.container}>
-      <img
+      <Image
         src={`/news/${picture}`}
         alt={pictureText}
         className={classes.image}
+        width={6000}
+        height={6000}
       />
       <div className={classes.newsContainer}>
         <div className={classes.latestNews}>JAUNUMI</div>

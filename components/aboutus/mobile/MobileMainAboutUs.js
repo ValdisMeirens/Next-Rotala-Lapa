@@ -1,19 +1,23 @@
 import MobileAboutUsInfo from "./MobileAboutUsInfo";
 import classes from "./MobileMainAboutUs.module.css";
 import InfoMobile from "../../header/common/InfoMobile";
+import Diana from "../../../public/aboutus/Diana.png";
+import Donats from "../../../public/aboutus/Donats.png";
+import aboutUsMainImage from "../../../public/aboutus/par_mums_titulbilde.png";
+import aboutUsText from "../../../public/header/par-mums.png"
 
 const MobileMainAboutUs = (props) => {
   return (
     <div className={classes.aboutUsContainer}>
       <InfoMobile
-        backgroundImage="/aboutus/par_mums_titulbilde.png"
+        backgroundImage={aboutUsMainImage}
         backgroundImageText="Par Mums"
-        image="/header/par-mums.png"
+        image={aboutUsText}
         imageText="Par Mums teksts"
       />
 
       <MobileAboutUsInfo
-        picture="/aboutus/Diana.png"
+        picture={Diana}
         pictureText="Diana"
         name="Diāna Gavare"
         role="Tautas deju ansambļa ROTAĻA mākslinieciskā vadītāja"
@@ -26,7 +30,7 @@ const MobileMainAboutUs = (props) => {
         diam nonummy nibh euismod tincidunt ut"
       />
       <MobileAboutUsInfo
-        picture="/aboutus/Donats.png"
+        picture={Donats}
         pictureText="Donats"
         name="Donats Rudzits"
         role="Tautas deju ansambļa ROTAĻA mākslinieciskā vadītājas asistents"

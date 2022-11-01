@@ -11,7 +11,7 @@ export default async function handler(req, res) {
 
   try {
     const query =
-      "SELECT ID, IMAGE_PATH, YEAR, FOLDER_NAME, PARENT_ID FROM test.gallery";
+      "SELECT ID, IMAGE_PATH, YEAR, FOLDER_NAME, PARENT_ID FROM gallery";
     const values = [];
     const [data] = await dbconnection.execute(query, values);
     dbconnection.end();

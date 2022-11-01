@@ -3,6 +3,8 @@ import DesktopAboutUsInfo from "./DesktopAboutUsInfo";
 import classes from "./DesktopMainAboutUs.module.css";
 import aboutUs from "../../../public/aboutus/par_mums_titulbilde.png";
 import iamgeAboutUs from "../../../public/header/par-mums.png";
+import Diana from "../../../public/aboutus/Diana.png";
+import Donats from "../../../public/aboutus/Donats.png"
 
 const DesktopMainAboutUs = (props) => {
   return (
@@ -14,7 +16,7 @@ const DesktopMainAboutUs = (props) => {
         imageText="Par Mums teksts"
       />
       <DesktopAboutUsInfo
-        picture="/aboutus/Diana.png"
+        picture={Diana}
         pictureText="Diana"
         name="Diāna Gavare"
         role="Tautas deju ansambļa ROTAĻA mākslinieciskā vadītāja"
@@ -22,7 +24,7 @@ const DesktopMainAboutUs = (props) => {
         diam nonummy nibh euismod tincidunt ut"
       />
       <DesktopAboutUsInfo
-        picture="/aboutus/Donats.png"
+        picture={Donats}
         pictureText="Donats"
         name="Donats Rudzits"
         role="Tautas deju ansambļa ROTAĻA mākslinieciskā vadītājas asistents"

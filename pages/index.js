@@ -30,7 +30,10 @@ export default function Home(props) {
 
 export async function getServerSideProps() {
   const res = await fetch(`${server}/api/news`);
+  console.log(res);
+
   const data = await res.json();
+  console.log(data);
 
   return {
     props: {
