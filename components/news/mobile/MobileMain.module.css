@@ -11,26 +11,31 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 80%;
+  width: 90%;
   margin: auto;
   padding-top: 5%;
   padding-bottom: 2.5%;
-  transition: all 3s ease;
   border-bottom: 1px solid black;
 }
 
 .latestNews {
-  font-size: 2rem;
-  font-weight: 900;
+  font-size: 1.5rem;
+  font-weight: 600;
   color: green;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.5rem;
 }
 
 .newsTitle {
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-  font-size: 1.5rem;
-  font-weight: 700;
+  padding: 2.5%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  min-height: 8vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .smallText {
@@ -40,7 +45,6 @@
 
   white-space: wrap;
   overflow: hidden;
-  /* text-overflow: ellipsis; */
   min-height: 25vh;
   line-height: 2rem;
   max-height: 200px;
@@ -48,17 +52,14 @@
 
 .readMore {
   align-self: flex-end;
-  padding: 3%;
-  background-color: green;
-  font-size: 0.5rem;
+  padding: 2%;
+  font-size: 0.75rem;
   border-radius: 5%;
-  /* border: 1px solid green; */
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  margin-top: 3%;
+  color: green;
 }
 
 .readMore:hover {

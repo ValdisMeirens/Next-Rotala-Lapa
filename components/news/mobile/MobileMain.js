@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import classes from "./MobileMain.module.css";
 import Link from "next/link";
-import { motion } from "framer-motion";
 import Image from "next/image";
 
 const MobileMain = (props) => {
@@ -13,29 +12,15 @@ const MobileMain = (props) => {
   const [smallText, setSmallText] = useState(props.news.data.news[0].smalltext);
   const [picture, setPicture] = useState(props.news.data.news[0].image);
   const [newsid, setNewsId] = useState(props.news.data.news[0].ID);
-  const item = {
-    hidden: {
-      scale: 0.8,
-      opacity: 0,
-    },
-    visible: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        delay: 0.4,
-      },
-    },
-  };
 
   useEffect(() => {
     const changeNews = setInterval(() => {
       counter = counter === arrayLenght ? 0 : counter + 1;
-
       setTitle(props.news.data.news[counter].title);
       setSmallText(props.news.data.news[counter].smalltext);
       setPicture(props.news.data.news[counter].image);
       setNewsId(props.news.data.news[counter].ID);
-    }, 2000);
+    }, 1000);
     return () => clearInterval(changeNews);
   }, []);
 
@@ -50,22 +35,17 @@ const MobileMain = (props) => {
       />
       <div className={classes.newsContainer}>
         <div className={classes.latestNews}>JAUNUMI</div>
-        <motion.div
-          className={classes.newsTitle}
-          variants={item}
-          initial="hidden"
-          animate="visible"
-        >
-          {title}
-        </motion.div>
+        <div className={classes.newsTitle}><div>{title}</div></div>
         <p className={classes.smallText}>{smallText}</p>
-        <Link href={`/zinas-par-mums-ko-nezinajat/${newsid}`} className={classes.readMore}>
+        <Link
+          href={`/zinas-par-mums-ko-nezinajat/${newsid}`}
+          className={classes.readMore}
+        >
           LASĪT VAIRĀK
         </Link>
       </div>
     </div>
   );
-
 };
 
 export default MobileMain;
