@@ -6,34 +6,35 @@
   justify-content: center;
 
   top: 35%;
-  left: 12.125%;
-
-  /* padding-left: auto; */
-  width: 60%;
-  border: 1px solid red;
-
-    text-align: left;
+  width: 100%;
+  text-align: left;
+  
 }
 
 .title {
-  font-size: 4vmax;
+  font-size: 2.25vmax;
   letter-spacing: 0.25rem;
-  /* width: 80vw; */
-  /* margin: auto; */
+  margin: auto;
+  width: 75%;
+  padding-bottom: 1.5%;
 }
 
 .smallText {
   font-size: 1.25vmax;
-  width: 100%;
+  margin: auto;
+  width: 75%;
 }
 
 .text {
-  /* width: 55%; */
-  font-size: 1.5vmax;
+  font-size: 1.25vmax;
+  margin: auto;
+  width: 75%;
 }
 
 .readmore {
-  padding-top: 1%;
+  padding-top: 1.5%;
   font-size: 0.75vmax;
+  margin: auto;
+  width: 75%;
   cursor: pointer;
 }

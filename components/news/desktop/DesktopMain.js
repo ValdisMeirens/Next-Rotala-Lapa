@@ -24,7 +24,7 @@ const DesktopMain = (props) => {
 
       setNewsId(props.news.data.news[counter].ID);
       setText(props.news.data.news[counter].text);
-    }, 1000);
+    }, 3000);
     return () => clearInterval(changeNews);
   }, []);
 
