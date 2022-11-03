@@ -1,6 +1,6 @@
 import DesktopNavigation from "./desktop/DesktopNavigation";
-import MobileNavigation from "./mobile/MobileNavigation";
 import classes from "./Header.module.css";
+import MobileNavigation from "./mobile/MobileNavigation";
 
 const Header = () => {
   return (

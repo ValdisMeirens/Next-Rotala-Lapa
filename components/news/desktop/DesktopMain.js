@@ -17,16 +17,14 @@ const DesktopMain = (props) => {
 
   useEffect(() => {
     const changeNews = setInterval(() => {
-
-
-      counter = counter === arrayLenght ? 0 : counter  + 1;
+      counter = counter === arrayLenght ? 0 : counter + 1;
       setTitle(props.news.data.news[counter].title);
       setSmallText(props.news.data.news[counter].smalltext);
       setPicture(props.news.data.news[counter].image);
 
       setNewsId(props.news.data.news[counter].ID);
       setText(props.news.data.news[counter].text);
-    }, 3000);
+    }, 1000);
     return () => clearInterval(changeNews);
   }, []);
 
@@ -38,7 +36,7 @@ const DesktopMain = (props) => {
           alt="TDA Rotaļa jaunumi"
           className={classes.image}
           width={6000}
-          height={4000}
+          height={6000}
         />
       </div>
 

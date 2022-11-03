@@ -1,22 +1,85 @@
-.navLinksContainer {
-  border: 1px solid black;
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  position: absolute;
+}
+
+.logocontainer {
+  width: 20%;
+  height: auto;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+}
+
+.navcontainer {
+  width: 10%;
+  height: auto;
+}
+
+.nav {
+  width: 100%;
+  height: auto;
+}
+
+.overlaycontainer {
   color: white;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 1.5rem;
+  background-color: black;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.close {
+  font-size: 2rem;
+  padding-right: 1rem;
+  color: green;
+}
+
+.navtextcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  background-color: green;
-  transition: width 2s;
-
+  align-content: center;
+  font-size: 1.25rem;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
-.navLinksContainer li {
-  padding: 2% 0;
+.childnavtextcontainer {
+  width: 70%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.container li {
-  cursor: pointer;
+.childnavtextcontainer li {
+  letter-spacing: 0.25rem;
+  border-bottom: 1px solid white;
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
-.container li:hover {
-  color: rgb(66, 61, 61);
+.childnavtextcontainer li:hover {
+  border-bottom: 1px solid darkgreen;
+  color: darkgreen;
 }
 
 @media all and (min-width: 750px) {
