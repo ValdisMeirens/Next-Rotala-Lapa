@@ -6,28 +6,26 @@
 }
 
 .container {
-  width: 70%;
+  width: 80%;
   margin: auto;
-  padding: 2.5% 0 2.5% 0;
+  padding: 2.5% 0;
   border-bottom: 1px solid black;
 }
 
 .title {
-  padding-bottom: 1%;
   text-align: center;
   color: green;
-  letter-spacing: 1rem;
+  letter-spacing: 0.2rem;
   width: 100%;
   margin: auto;
-  font-size: 4vmax;
+  padding-bottom: 2%;
 }
 
 .text {
-  text-align: justify;
-  letter-spacing: 0.2rem;
-  font-size: 1.125rem;
+  text-align: center;
+  line-height: 1.75;
+  color: rgb(110, 110, 110);
 
-  line-height: 2rem;
 }
 
 .desktopContainer {

@@ -30,8 +30,8 @@ const MobileMain = (props) => {
         src={`/news/${picture}`}
         alt={pictureText}
         className={classes.image}
-        width={6000}
-        height={6000}
+        width={2000}
+        height={2000}
       />
       <div className={classes.newsContainer}>
         <div className={classes.latestNews}>JAUNUMI</div>

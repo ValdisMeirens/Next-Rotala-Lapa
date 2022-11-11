@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import classes from "./DesktopMain.module.css";
 import DesktopNewsContent from "./DesktopNewsContent.js";
 import Image from "next/image";
+import { AnimateSharedLayout } from "framer-motion";
+import { motion } from "framer-motion";
 
 const DesktopMain = (props) => {
   const pictureText = "TDA Rotaļa Jaunumi";
@@ -30,22 +32,24 @@ const DesktopMain = (props) => {
 
   return (
     <div className={classes.desktopContainer}>
-      <div className={classes.container}>
-        <Image
-          src={`/news/${picture}`}
-          alt="TDA Rotaļa jaunumi"
-          className={classes.image}
-          width={6000}
-          height={6000}
-        />
-      </div>
+      <AnimateSharedLayout type="crossfade">
+        <div className={classes.container}>
+          <Image
+            src={`/news/${picture}`}
+            alt="TDA Rotaļa jaunumi"
+            className={classes.image}
+            width={6000}
+            height={6000}
+          />
+        </div>
 
-      <DesktopNewsContent
-        title={title}
-        smallText={smallText}
-        newsid={newsid}
-        text={text}
-      />
+        <DesktopNewsContent
+          title={title}
+          smallText={smallText}
+          newsid={newsid}
+          text={text}
+        />
+      </AnimateSharedLayout>
     </div>
   );
 };
