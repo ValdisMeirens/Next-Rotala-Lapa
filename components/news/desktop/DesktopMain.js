@@ -1,12 +1,43 @@
 import { useState, useEffect, useRef } from "react";
-import classes from "./DesktopMain.module.css";
-import DesktopNewsContent from "./DesktopNewsContent.js";
 import Image from "next/image";
-import { AnimateSharedLayout } from "framer-motion";
-import { motion } from "framer-motion";
+import { AnimateSharedLayout, LayoutGroup, motion } from "framer-motion";
+import classes from "./DesktopMain.module.css";
+import DesktopMainDiv from "./DesktopMainDiv.js";
 
 const DesktopMain = (props) => {
-  const pictureText = "TDA Rotaļa Jaunumi";
+  // const firstNews = (
+  //   <DesktopMainDiv
+  //     title={props.news.data.news[0].title}
+  //     smallText={props.news.data.news[0].smallText}
+  //     image={props.news.data.news[0].image}
+  //     ID={props.news.data.news[0].ID}
+  //     text={props.news.data.news[0].text}
+  //   />
+  // );
+
+  // const secondNews = (
+  //   <DesktopMainDiv
+  //     title={props.news.data.news[1].title}
+  //     smallText={props.news.data.news[1].smallText}
+  //     image={props.news.data.news[1].image}
+  //     ID={props.news.data.news[1].ID}
+  //     text={props.news.data.news[1].text}
+  //   />
+  // );
+
+  // const thirdNews = (
+  //   <DesktopMainDiv
+  //     title={props.news.data.news[2].title}
+  //     smallText={props.news.data.news[2].smallText}
+  //     image={props.news.data.news[2].image}
+  //     ID={props.news.data.news[2].ID}
+  //     text={props.news.data.news[2].text}
+  //   />
+  // );
+
+  // const [first, setFirst] = useState(true);
+  // const [second, setSecond] = useState(false);
+  // const [third, setThird] = useState(false);
 
   const arrayLenght = props.news.data.news.length - 1;
   let counter = 0;
@@ -30,27 +61,48 @@ const DesktopMain = (props) => {
     return () => clearInterval(changeNews);
   }, []);
 
-  return (
-    <div className={classes.desktopContainer}>
-      <AnimateSharedLayout type="crossfade">
-        <div className={classes.container}>
-          <Image
-            src={`/news/${picture}`}
-            alt="TDA Rotaļa jaunumi"
-            className={classes.image}
-            width={6000}
-            height={6000}
-          />
-        </div>
+  // useEffect(() => {
+  //   const changeNews = setInterval(() => {
+  //     console.log("esmu te");
 
-        <DesktopNewsContent
+  //     if (first) {
+  //       console.log("first" + first);
+  //       setFirst(false);
+  //       setSecond(true);
+  //     } else if (second) {
+  //       console.log("second" + second);
+
+  //       setSecond(false);
+  //       setThird(true);
+  //     } else if (third) {
+  //       console.log("third" + third);
+
+  //       setThird(false);
+  //       setFirst(true);
+  //     }
+  //   }, 3000);
+  //   return () => clearInterval(changeNews);
+  // }, [first, second, third]);
+
+  return (
+    // <div className={classes.desktopContainer}>
+    //   <LayoutGroup>
+    //     {first && firstNews}
+    //     {second && secondNews}
+    //     {third && thirdNews}
+    //   </LayoutGroup>
+    // </div>
+    <LayoutGroup>
+      <motion.div className={classes.desktopContainer}>
+        <DesktopMainDiv
           title={title}
           smallText={smallText}
-          newsid={newsid}
+          image={picture}
+          ID={newsid}
           text={text}
         />
-      </AnimateSharedLayout>
-    </div>
+      </motion.div>
+    </LayoutGroup>
   );
 };
 
