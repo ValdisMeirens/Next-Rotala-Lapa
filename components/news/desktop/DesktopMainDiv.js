@@ -34,7 +34,13 @@ const DesktopMainDiv = (props) => {
       animate="visiable"
       exit="exit"
     >
-      <Image src={new2} alt="TDA Rotaļa jaunumi" className={classes.image} />
+      <Image
+        src={`/news/${news.image}`}
+        alt="TDA Rotaļa jaunumi"
+        className={classes.image}
+        width={2000}
+        height={2000}
+      />
       <DesktopNewsContent
         title={news.title}
         smallText={news.smallText}
