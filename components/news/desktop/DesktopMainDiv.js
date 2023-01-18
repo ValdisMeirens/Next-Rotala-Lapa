@@ -4,8 +4,6 @@ import Image from "next/image";
 import { motion, AnimatePresence, useCycle } from "framer-motion";
 import { useEffect } from "react";
 
-import new2 from "../../../public/aboutus/Donats.png";
-
 const animationVariant = {
   hidden: {
     opacity: 0,
@@ -13,7 +11,7 @@ const animationVariant = {
   visiable: {
     opacity: 1,
     transition: {
-      duration: 0.5,
+      duration: 1,
       ease: "easeInOut",
     },
   },

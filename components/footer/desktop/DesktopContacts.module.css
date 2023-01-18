@@ -1,35 +1,33 @@
 .container {
-    padding-top: 2%;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: rgb(110, 110, 110);
-  }
-  
-  .contactheading {
-    font-size: 1.vmax;
-    font-weight: 500;
-  }
-  
-  .contactparagraph {
-    font-weight: 100;
-    width: 35%;
-    padding-top: 0.5%;
-  }
-  
-  .socialnetworkcontainer {
-    display: flex;
-    width: 25%;
-    margin: auto;
-    align-items:center;
-    justify-content: center;
-    justify-items: center;
-    padding-top: 1%;
-    padding-bottom: 0.5%;
+  padding-top: 2%;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: rgb(110, 110, 110);
+}
 
-  }
-  
+.contactheading {
+  /* font-size: 1vmax; */
+  font-weight: 500;
+}
+
+.contactparagraph {
+  font-weight: 100;
+  width: 50%;
+  padding-top: 0.5%;
+}
+
+.socialnetworkcontainer {
+  display: flex;
+  width: 25%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+}

@@ -2,48 +2,75 @@ import { useState, useEffect } from "react";
 import classes from "./MobileMain.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { motion, AnimatePresence, useCycle, LayoutGroup } from "framer-motion";
+import MobileMainDiv from "./MobileMainDiv";
+
+// const animationVariant = {
+//   hidden: {
+//     opacity: 0,
+//   },
+//   visiable: {
+//     opacity: 1,
+//     transition: {
+//       duration: 0.5,
+//       ease: "easeInOut",
+//     },
+//   },
+//   exit: {
+//     opacity: 0,
+//     transition: {
+//       duration: 0.5,
+//     },
+//   },
+// };
 
 const MobileMain = (props) => {
-  const pictureText = "TDA Rotaļa Jaunumi";
+  // console.log(props.news.data.news);
+  // const newsArray = props.news.data.news.map((news) => (
+  //   <motion.div
+  //     variants={animationVariant}
+  //     key={news.ID}
+  //     initial="hidden"
+  //     animate="visiable"
+  //     exit="exit"
+  //     className={classes.test}
+  //   >
+  //     <Image
+  //       src={`/news/${news.image}`}
+  //       alt="TDA Rotaļa jaunumi"
+  //       className={classes.image}
+  //       width={2000}
+  //       height={2000}
+  //     />
+  //     <motion.div className={classes.newsContainer}>
+  //       <motion.div className={classes.latestNews}>JAUNUMI</motion.div>
+  //       <motion.div className={classes.newsTitle}>
+  //         <motion.div>{news.title}</motion.div>
+  //       </motion.div>
+  //       <motion.p className={classes.smallText}>{news.info}</motion.p>
+  //       <Link
+  //         href={`/zinas-par-mums-ko-nezinajat/${news.ID}`}
+  //         className={classes.readMore}
+  //       >
+  //         LASĪT VAIRĀK
+  //       </Link>
+  //     </motion.div>
+  //   </motion.div>
+  // ));
 
-  const arrayLenght = props.news.data.news.length - 1;
-  let counter = 0;
-  const [title, setTitle] = useState(props.news.data.news[0].title);
-  const [smallText, setSmallText] = useState(props.news.data.news[0].smalltext);
-  const [picture, setPicture] = useState(props.news.data.news[0].image);
-  const [newsid, setNewsId] = useState(props.news.data.news[0].ID);
+  // const [currentImage, setCurrentImage] = useCycle(...newsArray);
 
-  useEffect(() => {
-    const changeNews = setInterval(() => {
-      counter = counter === arrayLenght ? 0 : counter + 1;
-      setTitle(props.news.data.news[counter].title);
-      setSmallText(props.news.data.news[counter].smalltext);
-      setPicture(props.news.data.news[counter].image);
-      setNewsId(props.news.data.news[counter].ID);
-    }, 1000);
-    return () => clearInterval(changeNews);
-  }, []);
+  // useEffect(() => {
+  //   const timeout = setInterval(setCurrentImage, 2000);
+
+  //   return () => clearInterval(timeout);
+  // }, [setCurrentImage, currentImage]);
 
   return (
-    <div className={classes.container}>
-      <Image
-        src={`/news/${picture}`}
-        alt={pictureText}
-        className={classes.image}
-        width={2000}
-        height={2000}
-      />
-      <div className={classes.newsContainer}>
-        <div className={classes.latestNews}>JAUNUMI</div>
-        <div className={classes.newsTitle}><div>{title}</div></div>
-        <p className={classes.smallText}>{smallText}</p>
-        <Link
-          href={`/zinas-par-mums-ko-nezinajat/${newsid}`}
-          className={classes.readMore}
-        >
-          LASĪT VAIRĀK
-        </Link>
-      </div>
+    <div className={classes.mobileContainer}>
+      <LayoutGroup>
+        <MobileMainDiv data={props} />
+      </LayoutGroup>
     </div>
   );
 };

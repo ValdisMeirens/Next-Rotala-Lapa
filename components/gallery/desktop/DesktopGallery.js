@@ -6,16 +6,9 @@ const DesktopGallery = (props) => {
     ({ ID, IMAGE_PATH, YEAR, FOLDER_NAME, PARENT_ID }) => {
       return (
         <div className={classes.imageContainer} key={ID}>
-          {/* <img
-            src={`${FOLDER_NAME}/${IMAGE_PATH}`}
-            alt={YEAR}
-            className={classes.image}
-          /> */}
           <div className={classes.image}>
             <Image
               src={`${FOLDER_NAME}/${IMAGE_PATH}`}
-              // layout="contain"
-              // objectFit="contain"
               alt="Galerija"
               width={1900}
               height={1900}

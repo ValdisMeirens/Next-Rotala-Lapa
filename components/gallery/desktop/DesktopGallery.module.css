@@ -32,11 +32,9 @@
   }
 }
 
-
 @media all and (max-width: 750px) {
   .imageContainer {
     flex: 0 0 100%;
     max-width: 100%;
   }
 }
-

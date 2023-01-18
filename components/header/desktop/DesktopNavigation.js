@@ -8,18 +8,18 @@ const DesktopNavigation = () => {
 
   const mouseEnterHandler = () => {
     setShowNavLinks(true);
-  }
+  };
 
   const mouseLeaveHandler = () => {
     setShowNavLinks(false);
-  }
+  };
 
   return (
     <div className={classes.desktopContainer}>
-      <DesktopMainHeader  onMouseEnter={mouseEnterHandler} />
+      <DesktopMainHeader onMouseEnter={mouseEnterHandler} />
       {showNavLinks && (
-        <div className={classes.navLinksContainer} >
-          <NavLinks  onMouseLeave={mouseLeaveHandler}/>
+        <div className={classes.navLinksContainer}>
+          <NavLinks onMouseLeave={mouseLeaveHandler} />
         </div>
       )}
     </div>

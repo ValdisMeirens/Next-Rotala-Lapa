@@ -1,6 +1,6 @@
 .followUsContainer {
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -11,15 +11,13 @@
 }
 
 .followUsTitle {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: green;
-  letter-spacing: 0.5rem;
-  padding-bottom: 2.5%;
+  color: rgb(41, 117, 41);
+  letter-spacing: 0.25rem;
+  font-weight: 400;
 }
 
 .socialNetworkContainer {
   display: flex;
-  width: 80%;
+  width: 60%;
   margin: auto;
 }

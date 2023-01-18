@@ -1,19 +1,20 @@
 import classes from "./DesktopNewsContent.module.css";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const DesktopNewsContent = (props) => {
   return (
-    <div className={classes.container}>
-      <div className={classes.title}>{props.title}</div>
-      <div className={classes.smallText}>{props.smallText}</div>
-      <div className={classes.text}>{props.text}</div>
+    <motion.div className={classes.container}>
+      <motion.div className={classes.title}>{props.title}</motion.div>
+      <motion.div className={classes.smallText}>{props.smallText}</motion.div>
+      <motion.div className={classes.text}>{props.text}</motion.div>
 
-      <div className={classes.readMoreContainer}>
+      <motion.div className={classes.readMoreContainer}>
         <Link href={`/zinas-par-mums-ko-nezinajat/${props.newsid}`}>
           <div className={classes.readmore}>Lasīt vairāk...</div>
         </Link>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 
