@@ -8,8 +8,8 @@ const MobilenNewsMain = (props) => {
         src={`/news/${props.news.image}`}
         alt={props.news.title}
         className={classes.image}
-        width={6000}
-        height={6000}
+        width={2000}
+        height={2000}
       />
       <div className={classes.container}>
         <h1 className={classes.title}>{props.news.title}</h1>

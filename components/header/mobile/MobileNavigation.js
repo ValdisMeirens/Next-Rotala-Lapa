@@ -60,10 +60,16 @@ const MobileNavigation = () => {
             <Link href="/" className={classes.size}>
               <li>JAUNUMI</li>
             </Link>
-            <Link href="/galerija-ar-cilvekiem-kam-lekat-polku-ir-hobijs" className={classes.size}>
+            <Link
+              href="/galerija-ar-cilvekiem-kam-lekat-polku-ir-hobijs"
+              className={classes.size}
+            >
               <li>GALERIJA</li>
             </Link>
-            <Link href="/par-mums-skaistajiem-cilvekiem" className={classes.size}>
+            <Link
+              href="/par-mums-skaistajiem-cilvekiem"
+              className={classes.size}
+            >
               <li>PAR MUMS</li>
             </Link>
           </ul>

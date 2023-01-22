@@ -2,7 +2,7 @@
   object-fit: cover;
   width: 100%;
   height: auto;
-  aspect-ratio: 16/10;
+  aspect-ratio: 3/2;
 }
 
 .container {
@@ -15,16 +15,21 @@
 
 .title {
   font-size: 1.25rem;
-  color: green;
-  padding-bottom: 4%;
-  letter-spacing: 0.1rem;
-  padding-top: 4%;
+  font-weight: 400;
+  color: rgb(41, 117, 41);
+
+  letter-spacing: 0.15rem;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .text {
-  text-align: justify;
-  font-size: 1.125rem;
+  font-size: 0.75rem;
   line-height: 2rem;
+  text-align: center;
+  color: rgb(110, 110, 110);
+  width: 95%;
+  margin: auto;
 }
 
 @media all and (min-width: 750px) {

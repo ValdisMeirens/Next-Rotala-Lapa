@@ -12,7 +12,7 @@ const DesktopMainGallery = (props) => {
         key={ID}
         href={`/galerija-ar-cilvekiem-kam-lekat-polku-ir-hobijs/galerija/${ID}`}
       >
-        <div className={classes.container}>
+        {/* <div className={classes.container}>
           <Image
             src={`/gallery_header/${IMAGE_NAME}`}
             alt={NAME}
@@ -21,6 +21,20 @@ const DesktopMainGallery = (props) => {
             height={1900}
           />
           <div className={classes.title}>{NAME}</div>
+        </div> */}
+
+        <div>
+          <div className={classes.gridimagecontainer}>
+            <Image
+              src={`/gallery_header/${IMAGE_NAME}`}
+              alt={NAME}
+              className={classes.gridimage}
+              width={2000}
+              height={2000}
+            />
+          </div>
+
+          <div className={classes.gridtitle}>{NAME}</div>
         </div>
       </Link>
     );
@@ -34,7 +48,9 @@ const DesktopMainGallery = (props) => {
         image={imageAboutUs}
         imageText="Galerija teksts"
       />
-      {galleryItems}
+      <div className={classes.gridcontainer}>{galleryItems}</div>
+      {/* <div className={classes.gridcontainer}>{galleryItems}</div> */}
+      {/* {galleryItems} */}
     </div>
   );
 };

@@ -3,12 +3,12 @@ import Image from "next/image";
 const InfoDesktop = (props) => {
   return (
     <div className={classes.container}>
+      <div className={classes.fadecontainer}></div>
       <Image
         src={props.backgroundImage}
         alt={props.backgroundImageText}
         className={classes.backgroundImage}
       />
-
       <div className={classes.imageTextContainer}>
         <Image
           src={props.image}
