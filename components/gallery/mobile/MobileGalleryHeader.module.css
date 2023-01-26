@@ -1,16 +1,35 @@
 .container {
-  aspect-ratio: 3/2;
-  position: relative;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: -1;
 }
 
-.fadecontainer {
+.imageTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-wrap: wrap;
+  /* z-index: 1; */
+  /* width: 70%; */
+  /* margin: auto; */
+  color: rgb(58, 150, 58);
+}
+
+.backgroundImage,
+.imageText {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+/* .fadecontainer {
   width: 100%;
   height: 100%;
   position: absolute;
-  z-index: -2;
   background: linear-gradient(
     to bottom,
     rgba(255, 255, 255, 0) 0%,
@@ -20,24 +39,4 @@
     rgba(255, 255, 255, 0.9) 90%,
     rgba(255, 255, 255, 1) 100%
   );
-}
-
-.backgroundImage {
-  width: 100%;
-  height: 100%;
-  z-index: -3;
-  object-fit: cover;
-  object-position: top center;
-}
-
-.imageTextContainer {
-  position: absolute;
-  z-index: 100;
-  width: 70%;
-  height: auto;
-}
-.imageText {
-  width: 100%;
-  height: auto;
-  margin: auto;
-}
+} */

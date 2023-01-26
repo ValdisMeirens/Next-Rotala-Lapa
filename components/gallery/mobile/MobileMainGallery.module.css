@@ -12,22 +12,38 @@
 
 /* galerija */
 .container {
-  width: 100%;
+  width: 90%;
+  margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   flex-direction: column;
   cursor: pointer;
+
+  aspect-ratio: 16/10;
+  border-radius: 3%;
+  border: 2px solid black;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
 .image {
   width: 100%;
   height: auto;
+  object-fit: cover;
+  object-position: center;
 }
 
 .title {
-  position: absolute;
-  font-size: 1.5rem;
-  width: 100%;
-  text-align: center;
-  color: white;
+  font-size: 0.75rem;
+  width: 90%;
+  font-weight: 500;
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 0.5%;
+
+  text-align: left;
+  /* color: black; */
+  color: rgb(41, 117, 41);
 }

@@ -3,6 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: -1;
 }
 
 .imageTextContainer {
@@ -16,4 +18,19 @@
 .imageText {
   width: 100%;
   height: auto;
+}
+
+.fadecontainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 40%,
+    rgba(255, 255, 255, 0.5) 70%,
+    rgba(255, 255, 255, 0.7) 80%,
+    rgba(255, 255, 255, 0.9) 90%,
+    rgba(255, 255, 255, 1) 100%
+  );
 }

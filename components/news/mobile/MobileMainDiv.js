@@ -49,6 +49,7 @@ const MobileMainDiv = (props) => {
       smalltext={news.smalltext}
       text={news.text}
       newsid={news.ID}
+      key={news.ID}
     />
   ));
 

@@ -1,0 +1,19 @@
+.row {
+}
+
+.imageContainer {
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  min-height: 40vh;
+
+  vertical-align: bottom;
+}
+
+@media all and (min-width: 750px) {
+  .row {
+    display: none;
+  }
+}

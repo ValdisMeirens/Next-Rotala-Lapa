@@ -21,8 +21,8 @@ const MobileMainGallery = (props) => {
             width={1900}
             height={1900}
           />
-          <div className={classes.title}>{NAME}</div>
         </div>
+        <div className={classes.title}>{NAME}</div>
       </Link>
     );
   });

@@ -2,7 +2,6 @@ import classes from "./MobileAboutUsInfo.module.css";
 import Image from "next/image";
 
 const MobileAboutUsInfo = (props) => {
-
   return (
     <div className={classes.container}>
       <div className={classes.infoContainer}>

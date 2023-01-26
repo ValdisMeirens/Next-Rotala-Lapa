@@ -4,8 +4,7 @@ import Footer from "../../components/footer/Footer";
 import DesktopMainGallery from "../../components/gallery/desktop/DesktopMainGallery";
 import MobileMainGallery from "../../components/gallery/mobile/MobileMainGallery";
 import Header from "../../components/header/Header";
-import {server} from "../../components/config/index"
-
+import { server } from "../../components/config/index";
 
 export default function GalleryMain(props) {
   const description = "TDA Rotaļa ir deju kolektīvs ar vēsturi";

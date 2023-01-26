@@ -1,23 +1,21 @@
-import classes from "./InfoMobile.module.css";
+import classes from "./MobileGalleryHeader.module.css";
 import Image from "next/image";
-const InfoMobile = (props) => {
+const MobileGalleryHeader = (props) => {
   return (
     <div className={classes.container}>
-      <div className={classes.fadecontainer}></div>
+      {/* <div className={classes.fadecontainer}></div> */}
       <Image
         src={props.backgroundImage}
         alt={props.backgroundImageText}
         className={classes.backgroundImage}
+        width={2000}
+        height={2000}
       />
       <div className={classes.imageTextContainer}>
-        <Image
-          src={props.image}
-          alt={props.imageText}
-          className={classes.imageText}
-        />
+        <div>{props.imageText}</div>
       </div>
     </div>
   );
 };
 
-export default InfoMobile;
+export default MobileGalleryHeader;
